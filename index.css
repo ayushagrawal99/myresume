@@ -1,0 +1,443 @@
+body{
+	margin: 0px;
+}
+
+      /*......body header......*/
+
+#body-header{
+	height: 65vh;
+	opacity: 0.8;
+	background-image: url(./images/macbook-apple-laptop.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 1.2rem;
+}
+
+        /*Horizontal list*/
+
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	margin:0px;
+
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+	font-weight: 100;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+}
+
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+}
+.nav-menu li a{
+	transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+   color: lightgrey;
+   border-bottom: 1px solid white;
+}
+
+.text-center{
+	text-align: center;
+}
+
+      /*......Name and social icons......*/
+
+#my-name{
+	color: white;
+	letter-spacing: 0.1rem;
+	font-size:3rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+#name-social-container{
+	margin-top: 20vh;
+}
+.social-icons li a i{
+	padding: 8px;
+	font-size: 1rem;
+	border-radius: 50%;
+}
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 6px 4px lightgrey;
+}
+
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+#my-image{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+
+}
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 2px solid lightgrey;
+	box-shadow: 0px 0px 6px 4px lightgrey;
+}
+#about p{
+	color : grey;
+	height: auto;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	text-align: justify;
+}
+
+section{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: lightgrey;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-left: 0.5rem;
+}
+.mb75px{
+	margin-bottom: 75px;
+}
+
+       /*........EXPERIENCE Section.......*/
+
+.timeline{
+	position: relative;
+	width: 75%;
+	height: auto;
+}
+
+.timeline-box{
+	position: relative;
+	width: 40%;
+	margin: 0 5%;
+	min-height: 150px;
+	text-align: right;
+}
+.timeline-box:nth-child(2n){
+	left:50%;
+}
+
+#edu-head{
+   font-size: 2rem;
+   color: blue;
+   font-weight: 600;
+   font-family: monospace;
+}
+.cmp-name{
+   color: OrangeRed;
+   font-size: 17px;
+   font-family: monospace;
+   font-weight: bold;
+}
+.month{
+    color: grey;
+}
+#para{
+   color: grey;
+   line-height: 1rem;
+   text-align: justify;
+}
+
+.exp-intro
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+      /*....timeline-divider....*/
+
+.timeline-divider{
+   position: absolute;
+   height: 80%;
+   width: 0;
+   top: 10%;
+   left: 50%;
+   border: 3px dashed #0096fa6b;
+}
+.timeline-icon{
+    position: sticky;
+	top: 25%;
+	
+}
+.timeline-icon i{
+	font-size: 1.7rem;
+	color: grey;
+	transform: rotate(90deg);
+}
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -14%;
+	width: 0.5rem;
+	height:0.5rem;
+	border-radius: 50%;
+	background-color: grey;
+}
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -12.5%;
+	width: 0.5rem;
+	height:0.5rem;
+	border-radius: 50%;
+	background-color: grey;
+}
+/*.timeline-box #edu-head ::before
+{
+	content: "";
+	height:40px;
+	width:40px;
+	display: inline-block;
+	background-size: contain;
+	background-image: url("../images/0000000000000723.jpg");
+}*/
+
+
+       /*.........SKILLS SECTION.........*/
+
+
+.skills-display{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.skill-progress{
+	border-radius: 1rem;
+	width: 12rem;
+	height: 2rem;
+	background-color: white;
+	margin: 30px;
+	align-items: center;
+}
+
+.skill-progress>div{
+	border-radius: 20px 0 0 20px;
+}
+
+
+.skill-name span{
+	color: black;
+    padding-left: 15px;
+	padding-top: 20px;
+	font-size: 18px;
+	font-family: monospace;
+}
+
+.skill-color1{
+	background-color: DarkTurquoise;
+	height: inherit;
+}
+.percentage-skill1{
+	width: 80%;
+	height: inherit;
+}
+
+.skill-color2{
+	background-color: lightsalmon;
+	height: inherit;
+}
+.percentage-skill2{
+	width: 80%;
+	height: inherit;
+}
+
+.skill-color3{
+	background-color: lightslategrey;
+	height: inherit;
+}
+.percentage-skill3{
+	width: 90%;
+	height: inherit;
+}
+
+.skill-color4{
+	background-color: orangered;
+	height: inherit;
+}
+.percentage-skill4{
+	width: 90%;
+	height: inherit;
+}
+
+.skill-color5{
+	background-color: PaleGoldenRod;
+	height: inherit;
+}
+.percentage-skill5{
+	width: 75%;
+	height: inherit;
+}
+
+.skill-color6{
+	background-color: tan;
+	height: inherit;
+}
+.percentage-skill6{
+	width: 80%;
+	height: inherit;
+}
+
+.skill-color7{
+	background-color: coral;
+	height: inherit;
+}
+.percentage-skill7{
+	width: 80%;
+	height: inherit;
+}
+
+.skill-color8{
+	background-color: darkseagreen;
+	height: inherit;
+}
+.percentage-skill8{
+	width: 80%;
+	height: inherit;
+}
+.skill-color9{
+	background-color: LightGreen;
+	height: inherit;
+}
+.percentage-skill9{
+	width: 80%;
+	height: inherit;
+}
+.skill-color10{
+	background-color: PowderBlue;
+	height: inherit;
+}
+.percentage-skill10{
+	width: 80%;
+	height: inherit;
+}
+
+
+       /*.......PORTFOLIO Section.......*/
+
+
+.port-display{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.port-img img{
+	width: 15rem;
+	height: 12rem;
+    margin: 30px 40px;
+}
+
+       /*......CONTACT Section.......*/
+
+.section-heading1 span{
+	font-size: 40px;
+	color: white;
+	display: inline-block;
+	padding-top: 10px;
+	margin-left: 0.5rem;
+}
+
+#contact{
+	background-image: linear-gradient(skyblue, blue);
+}
+
+.my-cont{ 
+    width:80%;
+    height:auto;
+}
+.main-cont{
+    display: inline-block;
+    width:50%;
+}
+#texta, input{
+	border:0px;
+	border-bottom: 2px solid white;
+	background: transparent;
+}
+#texta{
+	width: 70%;
+	height: 50px;
+}
+
+.address{
+    display: inline-block;
+    width:40%;
+    color: white;
+}
+.address p{
+	font-size: 17px;
+}
+.contacts input{
+	width:70%;
+	font-size: 1.2rem;
+	padding:10px;
+}
+::placeholder{
+	color: black;
+}
+#button{
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	text-align: center;
+	margin:auto;
+    display: block;
+    margin-left: 20%;
+    margin-top: 10%;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+#contact ul{
+    margin: 2%;
+}
+#msg{
+	line-height: 0.9rem;
+}
+.text-contact{
+	font-family: monospace;
+}
