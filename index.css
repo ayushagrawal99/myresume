@@ -168,7 +168,14 @@ section:nth-child(2n+1){
    line-height: 1rem;
    text-align: justify;
 }
-
+#exp li{
+	margin-top: 8px;
+}
+#para1{
+	color: grey;
+	line-height: 1.1rem;
+	text-align: justify;
+ }
 .exp-intro
 {
 	display: flex;
@@ -188,12 +195,13 @@ section:nth-child(2n+1){
 .timeline-icon{
     position: sticky;
 	top: 25%;
-	
+	z-index: 2;
 }
 .timeline-icon i{
 	font-size: 1.7rem;
 	color: grey;
 	transform: rotate(90deg);
+	left: 5%;
 }
 .timeline-box:nth-child(2n+1)::after{
 	content: '';
@@ -365,9 +373,17 @@ section:nth-child(2n+1){
 .port-img img{
 	width: 15rem;
 	height: 12rem;
-    margin: 30px 40px;
+    margin: 30px 40px 10px 40px;
 }
-
+.port-img a{
+	text-decoration: none;
+	margin-left: 60px;
+	font-size: 18px;
+	color: brown;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: Sans-serif;
+}
        /*......CONTACT Section.......*/
 
 .section-heading1 span{
